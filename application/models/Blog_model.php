@@ -55,6 +55,7 @@ class Blog_model extends CI_Model
 		];
 
 		// Query update using Query Builder
+		$this->db->where('id', $id);
 		$this->db->update('post', $data);
 	}
 }
